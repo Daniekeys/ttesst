@@ -1,0 +1,278 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.navbar-brand{
+    font-family: 'pacifico';
+    font-size: 35px;
+    color: lightcoral !important;
+}
+
+.nav-link{
+    font-size: 16px;
+    margin: 15px;
+    text-transform: capitalize;
+    color: black !important;
+    font-family: 'righteous';
+}
+.nav-link:hover{
+    color: #00e8e8 !important;
+}
+.active .nav-link{
+    color: #00e8e8 !important;
+}
+.menu-right{
+    padding: 13px 46px;
+    margin: 4%;
+    background-color: transparent;
+    transition-property: all 300ms ease-in;
+}
+.menu-right:hover{
+    color: white;
+    background-color: #00e8e8 !important;
+
+}
+.site-content{
+    background: url(Images/computers.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.site-content-1{
+    background: url(images/computers.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.site-content , .site-desc{
+    color: white;
+    font-family: 'righteous';
+}
+.site-content-1, .site-desc{
+    color: white;
+    
+    font-weight: 700;
+}
+.site-content-1, .site-title{
+    font-weight: 700;
+}
+.site-title{
+    margin-top: 30%;
+    margin-bottom: 6%;
+    font-size: 50px;
+    
+}
+.site-desc{
+    font-size: 16px;
+    padding-left: 15%;
+}
+.site-btn1{
+    margin-left: 20%;
+    background-color: black;
+    color: white;
+}
+.site-btn2{
+    
+    background-color: white;
+    color: black;
+}
+.site-btn1,.site-btn2{
+    margin-top: 5%;
+    margin-bottom: 40%;
+}
+
+/* SECTION-1 STYLING########################################### */
+.section-1 .heading-1{
+             margin-top: 8%;
+             text-transform: capitalize;
+             
+}
+.card{
+    width: 20rem;
+    min-height:450px;
+}
+
+    
+    
+    
+
+.profile img{
+    margin-left: 30%;
+    border-radius: 7px;
+}
+.section-1 .heading-2{
+    margin-bottom: 5%;
+    font-size: 39px;
+    text-transform: capitalize;
+}
+.section-1 .para-1{
+width: 60%;
+margin-left: 20%;
+margin-bottom: 5%;
+}
+.section-1 .card-text , .para-1{
+    color: rgba(0, 0, 0, 0.59);
+}
+.section-1{
+    margin-bottom: 8%;
+    
+}
+/* SECTION 2 ############## */
+.section-2 .container-fluid{
+    background-image: url(images/boy.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+.section-2 .heading-1{
+    margin-top: 20%;
+    margin-bottom: 4%;
+    color: white;
+    text-transform: capitalize;
+    
+
+}
+.section-2 .para{
+    color: white;
+    font-family: 'ubuntu';
+    margin-bottom: 7%;
+}
+.section-2 .btn{
+    margin-bottom: 15%;
+    width: 30%;
+    padding: 2% 5%;
+    text-transform: capitalize;
+}
+/* SECTION 3 OF THE WEBSITE##################### */
+.section-3{
+    margin-top: 6%;
+}
+.section-3 i{
+    color: #00e8e8;
+}
+.section-3 p{
+    color: rgba(0, 0, 0, 0.59);
+}
+/* section4 */
+.section-4{
+    
+    margin-top: 8%;
+}
+.section-4 .row .col-md-7 , .col-md-5{
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.section-4 a{
+    color: #00e8e8;
+    font-size: 40px;
+    text-decoration: none;
+}
+.section-4 .para-1{
+    color: white;
+
+    margin-top: 7%;
+    font-size: 22px;
+}
+/* footer tag */
+
+.social i{
+    color: #ef5651;
+    font-size: 20px;
+}
+
+
+/* RESPONSIVENESS */
+@media screen and (max-width:768px){
+    .section-1 .card{
+        width: 14rem;
+    }
+    .section-4 .col-md-7 img{
+        width: 350px;
+    }
+    .profile img{
+        margin-left: 15%;
+        border-radius: 7px;
+    }
+
+}
+
+
+
+@media screen and (max-width:600px) {
+    .site-content .site-title{
+        font-size: 30px;
+        padding-left: 5%;
+    }
+    .site-content .site-btn2{
+        display: none;
+    }
+    .site-content .site-btn1{
+        margin-left: 15%;
+    }
+    .site-desc{
+        font-size: 14px;
+        padding-left: 5%;
+    }
+    .section-1 .heading-1{
+        font-size: 30px;
+        text-transform: capitalize;
+        
+}
+
+.profile img{
+    margin-left: 25%;
+    border-radius: 7px;
+    height: 50%;
+    width: 50%;
+}
+.section-1 .heading-2{
+    font-size: 30px;
+    text-transform: capitalize;
+    
+}
+    
+    .section-1 .col-md-4{
+        padding: 5%;
+        margin-left: 8%;
+    }
+    .section-1 .card{
+        width: 19rem;
+        margin-left: 0%;
+    }
+    .adjust{
+        margin-left: 10%;
+    }
+    .section-4 .col-md-5{
+        padding: 0% 15%;
+    }
+    
+    .section-4 .col-md-7 img{
+        width: 15rem;
+        margin-left: 20px;
+    }
+    footer input[type="button"]{
+        margin-top: 5%;
+    }
+    .navbar-brand{
+        font-size: 22px; 
+        margin-left: 5%;
+    }
+    .navbar-toggler{
+        margin-right: 5%;
+    }
+    .site-content-1 .site-title{
+        font-size: 30px;
+        padding-left: 15%;
+    }
+    .site-content-1 .site-btn2{
+        display: none;
+    }
+    .site-content-1 .site-btn1{
+        margin-left: 15%;
+    }
+}

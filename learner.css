@@ -1,0 +1,321 @@
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.navbar .nav-link{
+    font-size: 16px;
+    padding-left: 16px !important;
+    padding-right: 16px!important;
+     font-weight: 600;
+}
+.navbar-toggler{
+    outline: none !important;
+    
+}
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: #1ebba3;
+     
+}
+.bg-black{
+    background: black;
+}
+.navbar-brand img{
+    height: 2.5rem;
+    width: 6.5rem;
+    
+}
+
+/* SLIDER STYLES */
+.carousel-item{
+    height: 600px;
+}
+
+
+.carousel-image-1{
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.4))
+    , url('./Images/use4.jpg');
+    background-size: cover;
+}
+.carousel-image-2{
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.4))
+    , url('./Images/novels2.jpg');
+    background-size: cover;
+}
+.carousel-image-3{
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.4))
+    , url('./Images/book-background1.jpg');
+    background-size: cover;
+}
+.title-color{
+    color: white;
+}
+.btn-color{
+    background: black;
+    color: grey;
+}
+.btn-color:hover{
+color: white;
+}
+@keyframes slide-btn{
+    16%{
+        transform: translateY(8px);
+    }
+    33%{
+        transform: translateY(-6px);
+    }
+    50%{
+        transform: translateY(4px);
+    }
+    65%{
+        transform: translateY(-2px);
+    }
+    85%{
+        transform: translateY(1px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.slide-btn{
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0,0,0,0);
+}
+.slide-btn:hover,
+.slide-btn:focus,
+.slide-btn:active{
+    animation-name: slide-btn;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+.carousel-control-prev{
+    color: white;
+}
+
+
+/* SECTION-1 STYLING########################################### */
+.section-1 .heading-1{
+    margin-top: 8%;
+    text-transform: capitalize;
+    
+}
+.heading-5{
+    margin-top: 2%;
+    margin-bottom: 4%;
+    text-transform: capitalize;
+}
+.card{
+width: 20rem;
+}
+
+
+.card{
+    min-height: 500px;
+    background-color: #ffd6d6 !important;
+}
+.spec{
+    min-height: 300px;
+    background-color: #ffd6d6 !important;
+}
+.spec .card-img-top{
+    max-height: 250px;
+}
+.card-img-top{
+    min-height: 250px;
+   
+}
+.social i{
+    color: #ef5651;
+    font-size: 20px;
+}
+
+
+.profile img{
+margin-left: 30%;
+border-radius: 7px;
+}
+.section-1 .heading-2{
+margin-bottom: 5%;
+font-size: 39px;
+text-transform: capitalize;
+}
+.section-1 .para-1{
+width: 60%;
+margin-left: 20%;
+margin-bottom: 5%;
+}
+.section-1 .card-text , .para-1{
+color: rgba(0, 0, 0, 0.59);
+}
+.section-1{
+margin-bottom: 8%;
+
+}
+
+
+/* section4 */
+.section-4{
+    
+    margin-top: 8%;
+}
+.section-4 .row .col-md-7 , .col-md-5{
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.section-4 a{
+    color: #00e8e8;
+    font-size: 40px;
+    text-decoration: none;
+}
+.section-4 .para-1{
+    color: white;
+    font-family: 'roboto condensed';
+    margin-top: 7%;
+    font-size: 22px;
+}
+.rating .fa{
+    color: #ff523b;
+}
+
+
+/* #############################TESTIMONIAL SESSION############################ */
+.clients img{
+    width: 100%;
+    border-radius: 50%;
+}
+.gg {
+    margin: 1rem .5rem;
+}
+.clients-hr{
+border-top: .05rem solid #1ebba3;
+}
+.usd{
+    background-color: white;
+    padding: 5rem 0;
+    height: 200%;
+    margin-bottom: 0;
+}
+
+
+/* responsiveness############################################################################## */
+@media (max-width: 770px) {
+    .star{
+        display: flex;
+        flex-direction: column;
+    }
+    .section-4 .row .col-md-7 , .col-md-5{
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    .section-4 a{
+        color: #00e8e8;
+        font-size: 40px;
+        text-decoration: none;
+    }
+    .section-4 .para-1{
+        color: white;
+        font-family: 'roboto condensed';
+        margin-top: 7%;
+        font-size: 22px;
+    }
+    .col-md-5{
+        align-self: center;
+    }
+    .para-1{
+        width: 100% vw;
+        align-self: center;
+        
+        
+    }
+   
+
+
+}
+@media (max-width: 600px) {
+    .navbar-brand img{
+        height: 2.5rem;
+        width: 6rem;
+        
+    }
+    .carousel-item{
+        height: 300px!important;
+    }
+    
+
+    .site-content .site-title{
+        font-size: 30px;
+        padding-left: 5%;
+    }
+    .site-content .site-btn2{
+        display: none;
+    }
+    .site-content .site-btn1{
+        margin-left: 15%;
+    }
+    .site-desc{
+        font-size: 14px;
+        padding-left: 5%;
+    }
+    .section-1 .heading-1{
+        font-size: 30px;
+        text-transform: capitalize;
+        
+}
+
+.profile img{
+    margin-left: 25%;
+    border-radius: 7px;
+    height: 50%;
+    width: 50%;
+}
+.section-1 .heading-2{
+    font-size: 30px;
+    text-transform: capitalize;
+    
+}
+    
+    .section-1 .col-md-4{
+        padding: 5%;
+        width: 100%;
+    }
+    .section-1 .card{
+        width: 19rem;
+        
+    }
+    .adjust{
+        margin-left: 10%;
+    }
+    .section-4 .col-md-5{
+        padding: 0% 15%;
+    }
+    
+    .section-4 .col-md-7 img{
+        width: 15rem;
+        margin-left: 20px;
+    }
+    footer input[type="button"]{
+        margin-top: 5%;
+    }
+    .navbar-brand{
+        font-size: 22px; 
+        margin-left: 5%;
+    }
+    .navbar-toggler{
+        margin-right: 5%;
+    }
+    .site-content-1 .site-title{
+        font-size: 30px;
+        padding-left: 15%;
+    }
+    .site-content-1 .site-btn2{
+        display: none;
+    }
+    .site-content-1 .site-btn1{
+        margin-left: 15%;
+    }
+}
+

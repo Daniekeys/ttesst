@@ -1,0 +1,1 @@
+<?php header( 'Location:C:/Users/starl/OneDrive/Documents/hosting/index.html' ) ;  ?>

@@ -1,0 +1,360 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+}
+ nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+}
+li a{
+    text-decoration: none;
+    color: #555;
+}
+p{
+    color: #555;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+
+
+.logo img{
+    width: 10rem;
+    height: 2.5rem;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.pro{
+    margin-bottom: 0;
+    max-height: 600px;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+    
+}
+
+.col-2 img{
+    max-width: 100%;
+    padding: 50px 0;
+    
+}
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+    overflow: hidden;
+}
+.btn{
+    color: white;
+    background-color: #ff523b;
+    display: inline-block;
+    padding: 8px 30px;
+    margin: 30px 0;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background-color: #563434;
+}
+.header{
+    background: radial-gradient(#fff, #ffd6d6);
+}
+.header .row{
+    margin-top: 70px;
+}
+/* ##################FEATURES############################### */
+.categories{
+margin: 70px 0;
+}
+.col-3{
+    flex-basis: 30%;
+    /* ALL THE COLUMN WILL TAKE 30% OF THE FULL WIDTHS. 
+    SINCE WE HAVE THREE OF THEM SO IT WILL BE 30% FOR EACH OF THEM */
+    min-width: 250px;
+    margin-bottom: 30px;
+
+}
+.col-3 img{
+    width: 100%;
+    /* SINCE THE FLEX BASICS GAVE EACH COLUMN 30%
+    THEN IF YOU SET THE IMAGE WIDTH TO 1005 THE IT GIVES US FULL IMAGE THAT TRIES 
+    TO OCUPY THE GIVEN 30% FROM THYE FLEX BASICS AND VICE VERSAL */
+    max-height: 250px;
+    min-height: 250px;
+
+}
+.small-container{
+    max-width: 1080px;
+    /* this will further reduce the size of the images and other contents as well */
+    margin: auto;
+    /* this makes sure the contents are being centered apporiately */
+padding-left: 25px;
+padding-right: 25px;
+}
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 10%;
+    transition: transform 0.5s;
+    /* TRANSITION TRANSFORM 5S GIVES US THE TIME FOR THE TRANSITION PROCESS */
+}
+.col-4 img{
+    width: 100%;
+    max-height: 300px;
+    /* this will make sure that the images hieght doesnt pass 300px */
+    min-height: 299px;
+    /* this will make sure that the minimum height of the images are 299px . so that
+    all the images will surely ryme. */
+}
+
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+ line-height: 60px;
+ color: #555;
+
+    position: relative;
+}
+.title::after{
+    content: '';
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    /* POSITION ABSOLUTE WILL BRING THE AFTER DESIGN OUTSIDE 
+    IT WILL BRING IT TO THE FORE FRONT */
+    bottom: 0;
+    /* THIS WILL BRING IT DOWN TO THE BUTTOM OF THE TITLE */
+    left: 50%;
+    transform: translateX(-50%);
+    /* TRANSFOR TRANSLATE X WHICH IS NEGATIVE WILL HELP TO CENTRALIZE THE 
+    DASH EXACTLY AT THE CENTER OF THE TITLE */
+
+}
+h4{
+    color: #555;
+    font-weight: normal;
+}
+.col-4 p {
+    font-size: 14px;
+}
+.rating .fa{
+    color: #ff523b;
+}
+.col-4:hover{
+    transform: translateY(5px);
+    /* THIS WILL MAKE THE ITEMS TO MOVE UP AND DOWN IN 5PX */
+
+}
+/* ############################################################################################################# */
+/* ############################################################################################################# */
+/* ############################################################################################################# */
+.offer{
+    /* background:  #7f8be9; */
+    background: radial-gradient(#fff, #ffd6d6);
+    margin-top: 80px;
+    padding: 30px 0;
+}
+.col-2 .offer-img{
+    padding: 50px;
+    /* WHAT APDDING DOES HERE IS TO EDUCE THE IMAGE SIZE */
+
+
+}
+small{
+    color: #555;
+}
+
+/* ################################################################################# */
+.testimonial{
+    padding-top: 100px;
+}
+.testimonial .col-3{
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0px rgba(0, 0,0, 0.1);
+    /* ThIS GIVES US THE UNIQUE POP OUT BEAUTY IN IT IT ACTUALLY DIIFRECIATES THE CONTAINER FROM THE OTHERS */
+   background-color: #ffd6d6;
+   /* THE BACKGROUND COLOR WAS APPLIED HERE TO MAKE SURE THAT THE BOX SHADOW IS ACTUALLY WORKING */
+   cursor: pointer;
+   /* this actually brings out the clickable state of the mouse when you hover to the page */
+   transition: transform 0.5s;
+   /* THIS MEANS THE TRANSFORM PROPERTIES WILL TAKE PLACE AFTER 0.5S IF ITS BACKGROUND INSTEAD OF TRANSFORM THE BACKGROUND 
+   PROPERTY WILL TAKE PLACE AFTER 0.5S */
+}
+.client{
+    border-radius: 50%;
+    margin-top: 20px;
+}
+.testimonial .col-3:hover{
+transform: translateY(-10px);
+/* TRANSFORM IS USED FOR CREATING A MOTION FOR THE CONTAINER 
+SO TRANSLATE Y NEGATIVE MOVES ITS VERTICALLY  TRANSLATE X MOVES IT HORIZONTALLY*/
+
+}
+.fa.fa-quote-left{
+    color: #ff523b;
+}
+.col-3 p{
+    font-size: 12px;
+    margin: 12px 0;
+    color: #777;
+}
+.testimonial .col-3 h3{
+    font-weight: 600;
+    color: #555;
+    font-size: 16px;
+}
+/* -----------------------------BRANDS-------------------------------------------- */
+.brands{
+    margin: 100px auto;
+}
+.col-5 {
+    width: 160px;
+
+}
+.col-5 img{
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+    /* THIS WILL TURN THE IMAGES TO BLACK AND WHITE */
+
+}
+.col-5 img:hover{
+    filter: grayscale(0);
+    /* THIS WILL TURN THE IMAGE BACK TO ITS ORIGINAL COLOR  */
+}
+
+/* ------------------FOOTER-------------------------------------------------- */
+
+.footer{
+    background: #000000;
+    font-size: 14px;
+    color: #8a8a8a;
+    padding: 60px 0 20px;
+
+}
+.footer p{
+    color: #8a8a8a;
+}
+.footer h3{
+    color: white;
+    margin-bottom: 20px;
+}
+.footer-col-1, .footer-col-2, .footer-col-3 , .footer-col-4 {
+    min-width: 250px;
+    margin-bottom: 20px;
+
+}
+.footer-col-1{
+    flex-basis: 30%;
+}
+.footer-col-2{
+    flex: 1;
+    /* THIS MAKES USE OF ALLN THE AVAILABLE SPACE */
+    text-align: center;
+}
+.footer-col-2 img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+.footer-col-3, .footer-col-4 {
+    flex-basis: 12%;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}
+.app-logo{
+    margin-top: 20px;
+
+}
+.app-logo img{
+    width: 140px;
+}
+.copyright{
+    text-align: center;
+}
+.footer hr{
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+.menu-icon{
+    width: 28px;
+    display: none;
+    margin-left: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: white;
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+}
+
+/* MEDIA QUERRIES FOR BELOW 600PX */
+@media only screen and (max-width: 600px) {
+ .row{
+     text-align: center;
+
+ }
+ .col-2, .col-3, .col-4{
+     flex-basis: 100%;
+ }
+
+
+}
