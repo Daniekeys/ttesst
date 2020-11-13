@@ -35,17 +35,19 @@ body{
 
 .carousel-image-1{
     background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.4))
-    , url('./Images/use4.jpg');
+    , url(https://res.cloudinary.com/www-daniekeys-com/image/upload/v1605272139/use4_uyrblr.jpg
+    );
     background-size: cover;
 }
 .carousel-image-2{
     background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.4))
-    , url('./Images/novels2.jpg');
+    , url( https://res.cloudinary.com/www-daniekeys-com/image/upload/v1605272131/novels2_xldutn.jpg);
     background-size: cover;
 }
 .carousel-image-3{
     background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.4))
-    , url('./Images/book-background1.jpg');
+    , url(https://res.cloudinary.com/www-daniekeys-com/image/upload/v1605272116/book-background1_pfsvmt.jpg
+    );
     background-size: cover;
 }
 .title-color{
